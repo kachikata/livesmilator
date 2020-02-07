@@ -1,0 +1,93 @@
+
+body {
+	background-image: url("radio.jpg");
+	background-size: cover;
+	 }
+h1.midasi{
+	display: inline-block;
+	position:relative;
+	font-size: :200%;
+
+	width: 400px;
+  height: 50px;
+	
+}
+
+
+div.word {
+	z-index: 1;
+	position:relative;	
+	display: block;
+	top:0px;
+	 left:1000px;
+	font-size: 150%;
+	width: 300px;
+  height: 400px;
+	background: white;				
+			}
+
+p.sample1{
+	z-index: 1;
+	display: inline-block;
+	 position:relative;
+	 top:50px;
+	 left:200px;
+	 background: skyblue;
+
+
+	 width: 100px;
+  	 height: 50px;
+}
+
+p.sample2{
+	z-index: 1;
+	display: inline-block;
+	 position:relative;
+	 top:50px;
+	 left:300px;
+	 background: skyblue;
+
+	 width: 100px;
+  height: 50px;
+}
+
+p.sample3{
+	z-index: 1;
+	display: inline-block;
+	 position:relative;
+	 top:50px;
+	 left:400px;
+	 background: skyblue;
+
+	 width: 100px;
+  height: 50px;
+}
+
+p.sample4{
+	z-index: 1;
+	display: inline-block;
+	 position:relative;
+	 top:50px;
+	 left:500px;
+	 background: skyblue;
+
+	 width: 100px;
+  height: 50px;
+}
+
+p.sample5{
+	z-index: 1;
+	display: inline-block;
+	 position:relative;
+	 top:50px;
+	 left:600px;
+	 background: skyblue;
+
+	 width: 100px;
+  height: 50px;
+}
+
+
+
+
+

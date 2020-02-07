@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" charset="utf-8">
+	 <link rel="stylesheet" type="text/css" href="Live.css">
+
+		<script language="javascript" type="text/javascript"  >
+ 
+
+    var data = ['おはよー', 'こんにちは', 'こんばんは', 'ｷﾀ━━(ﾟ∀ﾟ)━━!!','こん','こんばんはー','おっす','おはようございます','初見です','やっほー'];
+    var data2 = ['すごい', 'すげぇ', 'やばい', 'ええええええ','おおおおおお','やるやん','すっご','なんで'];
+    var data3 = ['えっ', 'えぇ...', 'どうして', 'は？','ありえん','やば','わかる','草','へぇー','こわい'];
+    var data4 = ['草', 'www', 'w', 'wwwwwww','おもしろ','やべぇｗ','それは草','草','（笑）','笑った'];
+    var data5 = ['わかる', 'それな', 'あるある', 'めっちゃわかる','わかるわぁ','ちょっとわかる','わかるマン','あー','せやな','わからんわー'];
+
+    var change;
+
+    const word = new Array();
+   for (var i = 0; i < 10; i++) {
+        let randNum = Math.floor(Math.random() * 10);
+            let hensu = randNum;
+        word.push(data[hensu]);
+    }
+
+        var myfunc1 = function () {
+
+        	change = 1;
+
+        	var id2 =setInterval(function(){
+
+            var id = document.getElementById("edit_area");
+           
+            let randNum = Math.floor(Math.random() * 10);
+            let hensu = randNum;
+
+            id.innerHTML="";
+
+            for(var i = 0; i < word.length; i++){
+             id.insertAdjacentHTML("afterbegin",word[i]+"<br>\n");
+         }
+
+         word.push(data[hensu]);
+         word.shift();
+
+         if(change != 1 ){
+            clearInterval(id2);
+         }
+
+         },1000)
+     }
+
+
+     var myfunc2 = function () {
+
+     	change = 2;
+
+     	clearInterval(id2);
+        	var id2 =setInterval(function(){
+       	
+            var id = document.getElementById("edit_area");
+            let randNum = Math.floor(Math.random() * 8);
+            let hensu = randNum;
+
+            id.innerHTML="";
+
+            for(var i = 0; i < word.length; i++){
+             id.insertAdjacentHTML("afterbegin",word[i]+"<br>\n");
+         }
+
+         word.push(data2[hensu]);
+         word.shift();
+
+          if(change != 2){
+            clearInterval(id2);
+         }
+
+         },1000)
+     }
+
+     var myfunc3 = function () {
+
+        	change = 3;
+
+        	var id2 =setInterval(function(){
+
+            var id = document.getElementById("edit_area");
+           
+            let randNum = Math.floor(Math.random() * 10);
+            let hensu = randNum;
+
+            id.innerHTML="";
+
+            for(var i = 0; i < word.length; i++){
+             id.insertAdjacentHTML("afterbegin",word[i]+"<br>\n");
+         }
+
+         word.push(data3[hensu]);
+         word.shift();
+
+         if(change != 3 ){
+            clearInterval(id2);
+         }
+
+         },1000)
+     }
+
+     var myfunc4 = function () {
+
+        	change = 4;
+
+        	var id2 =setInterval(function(){
+
+            var id = document.getElementById("edit_area");
+           
+            let randNum = Math.floor(Math.random() * 10);
+            let hensu = randNum;
+
+            id.innerHTML="";
+
+            for(var i = 0; i < word.length; i++){
+             id.insertAdjacentHTML("afterbegin",word[i]+"<br>\n");
+         }
+
+         word.push(data4[hensu]);
+         word.shift();
+
+         if(change != 4 ){
+            clearInterval(id2);
+         }
+
+         },1000)
+     }
+
+     var myfunc5 = function () {
+
+        	change = 5;
+
+        	var id2 =setInterval(function(){
+
+            var id = document.getElementById("edit_area");
+           
+            let randNum = Math.floor(Math.random() * 10);
+            let hensu = randNum;
+
+            id.innerHTML="";
+
+            for(var i = 0; i < word.length; i++){
+             id.insertAdjacentHTML("afterbegin",word[i]+"<br>\n");
+         }
+
+         word.push(data5[hensu]);
+         word.shift();
+
+         if(change != 5 ){
+            clearInterval(id2);
+         }
+
+         },1000)
+     }
+
+  </script>
+
+</head>
+<body>
+	<h1 class = "midasi">ライブ配信シミュレーター</h1>
+  
+  <div  id="edit_area" class="word"></div>
+ 
+  <p class="sample1"><input type="button" value="あいさつ" onclick="myfunc1()" style="WIDTH: 100px; HEIGHT: 50px"></p>
+  <p class="sample2"><input type="button" value="褒められる" onclick="myfunc2()" style="WIDTH: 100px; HEIGHT: 50px"></p>
+  <p class="sample3"><input type="button" value="驚かれる" onclick="myfunc3()" style="WIDTH: 100px; HEIGHT: 50px"></p>
+  <p class="sample4"><input type="button" value="笑われる" onclick="myfunc4()" style="WIDTH: 100px; HEIGHT: 50px"></p>
+  <p class="sample5"><input type="button" value="共感される" onclick="myfunc5()" style="WIDTH: 100px; HEIGHT: 50px"></p>
+ 
+
+</body>
+</html>
